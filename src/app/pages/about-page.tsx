@@ -192,7 +192,7 @@ export default function AboutPage() {
                 <div className="absolute inset-0 bg-accent/20 rounded-3xl transform rotate-6"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
                   <ImageWithFallback
-                    src="/team%20pictures/CEO_IMAGE_clean.png"
+                    src="/public/team-pictures/CEO_IMAGE_clean.png"
                     alt="Mr. Destiny Sunday Ameh"
                     className="rounded-3xl shadow-2xl w-3/4 h-[540px] object-contain bg-white"
                   />
@@ -251,7 +251,7 @@ export default function AboutPage() {
           <div className="max-w-3xl mx-auto">
             <a href="/certificate%20of%20operation.jpg" target="_blank" rel="noreferrer" className="block rounded-2xl shadow-lg overflow-hidden">
               <ImageWithFallback
-                src="/certificate%20of%20operation.jpg"
+                src="/public/certificate-of-operation.jpg"
                 alt="Certificate of Operation"
                 className="w-full h-auto object-contain"
               />

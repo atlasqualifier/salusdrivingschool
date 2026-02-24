@@ -6,38 +6,38 @@ import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 
 export default function GalleryPage() {
   const galleryImages = [
-    // Student pictures
-    { src: '/student%20pictures/1771930047944.jpg', title: 'Student 1', category: 'Students' },
-    { src: '/student%20pictures/1771930099009.jpg', title: 'Student 2', category: 'Students' },
-    { src: '/student%20pictures/1771930101160.jpg', title: 'Student 3', category: 'Students' },
-    { src: '/student%20pictures/1771930108625.jpg', title: 'Student 4', category: 'Students' },
-    { src: '/student%20pictures/1771930126251.jpg', title: 'Student 5', category: 'Students' },
+    // Student pictures (public)
+    { src: '/public/student-pictures/1771930047944.jpg', title: 'Student 1', category: 'Students' },
+    { src: '/public/student-pictures/1771930099009.jpg', title: 'Student 2', category: 'Students' },
+    { src: '/public/student-pictures/1771930101160.jpg', title: 'Student 3', category: 'Students' },
+    { src: '/public/student-pictures/1771930108625.jpg', title: 'Student 4', category: 'Students' },
+    { src: '/public/student-pictures/1771930126251.jpg', title: 'Student 5', category: 'Students' },
 
     // Training pictures
-    { src: '/training%20pictures/IMG-20260224-WA0019.jpg', title: 'Training 1', category: 'Training' },
-    { src: '/training%20pictures/IMG-20260224-WA0020.jpg', title: 'Training 2', category: 'Training' },
-    { src: '/training%20pictures/IMG-20260224-WA0021.jpg', title: 'Training 3', category: 'Training' },
-    { src: '/training%20pictures/IMG-20260224-WA0022.jpg', title: 'Training 4', category: 'Training' },
-    { src: '/training%20pictures/IMG-20260224-WA0023.jpg', title: 'Training 5', category: 'Training' },
-    { src: '/training%20pictures/IMG-20260224-WA0024.jpg', title: 'Training 6', category: 'Training' },
-    { src: '/training%20pictures/IMG-20260224-WA0029.jpg', title: 'Training 7', category: 'Training' },
-    { src: '/training%20pictures/IMG-20260224-WA0032.jpg', title: 'Training 8', category: 'Training' },
-    { src: '/training%20pictures/IMG-20260224-WA0033.jpg', title: 'Training 9', category: 'Training' },
-    { src: '/training%20pictures/IMG-20260224-WA0034.jpg', title: 'Training 10', category: 'Training' },
-    { src: '/training%20pictures/IMG-20260224-WA0035.jpg', title: 'Training 11', category: 'Training' },
-    { src: '/training%20pictures/IMG-20260224-WA0036.jpg', title: 'Training 12', category: 'Training' },
-    { src: '/training%20pictures/IMG-20260224-WA0037.jpg', title: 'Training 13', category: 'Training' },
-    { src: '/training%20pictures/IMG-20260224-WA0038.jpg', title: 'Training 14', category: 'Training' },
+    { src: '/public/training-pictures/IMG-20260224-WA0019.jpg', title: 'Training 1', category: 'Training' },
+    { src: '/public/training-pictures/IMG-20260224-WA0020.jpg', title: 'Training 2', category: 'Training' },
+    { src: '/public/training-pictures/IMG-20260224-WA0021.jpg', title: 'Training 3', category: 'Training' },
+    { src: '/public/training-pictures/IMG-20260224-WA0022.jpg', title: 'Training 4', category: 'Training' },
+    { src: '/public/training-pictures/IMG-20260224-WA0023.jpg', title: 'Training 5', category: 'Training' },
+    { src: '/public/training-pictures/IMG-20260224-WA0024.jpg', title: 'Training 6', category: 'Training' },
+    { src: '/public/training-pictures/IMG-20260224-WA0029.jpg', title: 'Training 7', category: 'Training' },
+    { src: '/public/training-pictures/IMG-20260224-WA0032.jpg', title: 'Training 8', category: 'Training' },
+    { src: '/public/training-pictures/IMG-20260224-WA0033.jpg', title: 'Training 9', category: 'Training' },
+    { src: '/public/training-pictures/IMG-20260224-WA0034.jpg', title: 'Training 10', category: 'Training' },
+    { src: '/public/training-pictures/IMG-20260224-WA0035.jpg', title: 'Training 11', category: 'Training' },
+    { src: '/public/training-pictures/IMG-20260224-WA0036.jpg', title: 'Training 12', category: 'Training' },
+    { src: '/public/training-pictures/IMG-20260224-WA0037.jpg', title: 'Training 13', category: 'Training' },
+    { src: '/public/training-pictures/IMG-20260224-WA0038.jpg', title: 'Training 14', category: 'Training' },
 
     // Team pictures
-    { src: '/team%20pictures/IMG-20260224-WA0001.jpg', title: 'Team 1', category: 'Team' },
-    { src: '/team%20pictures/IMG-20260224-WA0004.jpg', title: 'Team 2', category: 'Team' },
-    { src: '/team%20pictures/IMG-20260224-WA0008.jpg', title: 'Team 3', category: 'Team' },
-    { src: '/team%20pictures/IMG-20260224-WA0011.jpg', title: 'Team 4', category: 'Team' },
-    { src: '/team%20pictures/IMG-20260224-WA0012.jpg', title: 'Team 5', category: 'Team' },
-    { src: '/team%20pictures/IMG-20260224-WA0013.jpg', title: 'Team 6', category: 'Team' },
-    { src: '/team%20pictures/IMG-20260224-WA0028.jpg', title: 'Team 7', category: 'Team' },
-    { src: '/team%20pictures/CEO%20IMAGE.jpg', title: 'CEO', category: 'Team' },
+    { src: '/public/team-pictures/IMG-20260224-WA0001.jpg', title: 'Team 1', category: 'Team' },
+    { src: '/public/team-pictures/IMG-20260224-WA0004.jpg', title: 'Team 2', category: 'Team' },
+    { src: '/public/team-pictures/IMG-20260224-WA0008.jpg', title: 'Team 3', category: 'Team' },
+    { src: '/public/team-pictures/IMG-20260224-WA0011.jpg', title: 'Team 4', category: 'Team' },
+    { src: '/public/team-pictures/IMG-20260224-WA0012.jpg', title: 'Team 5', category: 'Team' },
+    { src: '/public/team-pictures/IMG-20260224-WA0013.jpg', title: 'Team 6', category: 'Team' },
+    { src: '/public/team-pictures/IMG-20260224-WA0028.jpg', title: 'Team 7', category: 'Team' },
+    { src: '/public/team-pictures/CEO%20IMAGE.jpg', title: 'CEO', category: 'Team' },
   ];
 
   const categories = ['All', 'Fleet', 'Training', 'Practice', 'Theory', 'Students', 'Team'];
