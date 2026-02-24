@@ -85,11 +85,22 @@ def deskew_certificate(src_path, out_path, quality=78, max_dim=2000):
         if angle < -45:
             angle = 90 + angle
 
-    # rotate by negative angle to deskew
+    # rotate by negative angle to deskew (use -angle)
     (h, w) = img.shape[:2]
     center = (w // 2, h // 2)
-    M = cv2.getRotationMatrix2D(center, angle, 1.0)
+    M = cv2.getRotationMatrix2D(center, -angle, 1.0)
     rotated = cv2.warpAffine(img, M, (w, h), flags=cv2.INTER_CUBIC, borderMode=cv2.BORDER_REPLICATE)
+
+    # ensure heading is at the top: compare dark pixel density top vs bottom
+    gray_rot = cv2.cvtColor(rotated, cv2.COLOR_BGR2GRAY)
+    h2 = gray_rot.shape[0]
+    top_strip = gray_rot[0:max(1, h2//8), :]
+    bottom_strip = gray_rot[-max(1, h2//8):, :]
+    top_dark = np.sum(top_strip < 200)
+    bottom_dark = np.sum(bottom_strip < 200)
+    # if bottom has more dark pixels (likely heading is at bottom), rotate 180 degrees
+    if bottom_dark > top_dark * 1.1:
+        rotated = cv2.rotate(rotated, cv2.ROTATE_180)
 
     # optional crop to content
     gray2 = cv2.cvtColor(rotated, cv2.COLOR_BGR2GRAY)
