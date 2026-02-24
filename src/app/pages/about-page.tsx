@@ -15,12 +15,13 @@ import {
   Clock
 } from 'lucide-react';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
-
-export default function AboutPage() {
-  const values = [
-    {
-      icon: Shield,
-      title: 'Safety First',
+import CEOImage from '../../../CEO IMAGE.jpg';
+@@
+                  <ImageWithFallback
+                    src={CEOImage}
+                    alt="Mr. Destiny Sunday Ameh"
+                    className="rounded-3xl shadow-2xl w-3/4 h-[540px] object-contain bg-white"
+                  />
       description: 'Safety is our top priority in every aspect of training',
     },
     {
@@ -249,7 +250,7 @@ export default function AboutPage() {
             <p className="text-muted-foreground">Official certificate for Salus Driving Academy</p>
           </div>
           <div className="max-w-3xl mx-auto">
-            <a href="/optimized/certificate-of-operation.jpg" target="_blank" rel="noreferrer" className="block rounded-2xl shadow-lg overflow-hidden transform rotate-0">
+            <a href="/optimized/certificate-of-operation.jpg" target="_blank" rel="noreferrer" className="block rounded-2xl shadow-lg overflow-hidden" style={{ transform: 'rotate(6deg)' }}>
               <ImageWithFallback
                 src="/optimized/certificate-of-operation.jpg"
                 alt="Certificate of Operation"
