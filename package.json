@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
-    "dev": "vite",
+    "dev": "vite --host",
     "serve:static": "live-server --port=5174 --entry-file=index.html"
   },
   "dependencies": {
