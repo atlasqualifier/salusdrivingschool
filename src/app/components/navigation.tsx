@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router';
+import logoSrc from '@/assets/logo.jpg';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -45,8 +46,8 @@ export function Navigation() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 z-50">
-            <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center">
-              <span className="font-bold text-primary text-xl">S</span>
+            <div className="w-12 h-12 rounded-full overflow-hidden bg-white/10 flex items-center justify-center">
+              <img src={logoSrc} alt="Salus Driving Academy" className="w-full h-full object-cover" />
             </div>
             <div className="hidden md:block">
               <h3 className="font-bold text-white text-xl leading-none">Salus</h3>
