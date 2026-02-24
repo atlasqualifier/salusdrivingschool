@@ -9,12 +9,3 @@
 
   Run `npm run dev` to start the development server.
   
-  For a simple static server that reloads all pages on file changes (useful after `npm run build`):
-
-  Run `npm run serve:static` which uses `live-server --entry-file=index.html`.
-
-  Helper scripts are provided:
-
-  - `dev.sh`: starts the Vite dev server.
-  - `serve.sh`: serves the `index.html` with live reload on port 5174.
-  

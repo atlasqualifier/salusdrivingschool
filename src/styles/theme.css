@@ -1,0 +1,315 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  
+  /* Premium Driving School Color System */
+  --background: #ffffff;
+  --foreground: #1a1a2e;
+  
+  /* Brand Colors - Deep Blue (Trust & Safety) */
+  --primary: #0f3460;
+  --primary-foreground: #ffffff;
+  --primary-light: #16497d;
+  --primary-dark: #0a1f38;
+  
+  /* Accent Colors - Safety Yellow */
+  --accent: #f39c12;
+  --accent-foreground: #1a1a2e;
+  --accent-light: #f5b041;
+  --accent-dark: #d68910;
+  
+  /* Secondary - Sky Blue (Modern & Fresh) */
+  --secondary: #3498db;
+  --secondary-foreground: #ffffff;
+  --secondary-light: #5dade2;
+  --secondary-dark: #2874a6;
+  
+  /* Success - Green for completion/achievement */
+  --success: #27ae60;
+  --success-foreground: #ffffff;
+  
+  /* Neutral Colors */
+  --card: #ffffff;
+  --card-foreground: #1a1a2e;
+  --muted: #f8f9fa;
+  --muted-foreground: #6c757d;
+  --border: rgba(15, 52, 96, 0.1);
+  --input: transparent;
+  --input-background: #f8f9fa;
+  --ring: #3498db;
+  
+  /* Road/Asphalt inspired */
+  --road-dark: #2c3e50;
+  --road-light: #34495e;
+  --road-line: #f39c12;
+  
+  --destructive: #e74c3c;
+  --destructive-foreground: #ffffff;
+  
+  --popover: #ffffff;
+  --popover-foreground: #1a1a2e;
+  
+  --switch-background: #cbced4;
+  --font-weight-medium: 600;
+  --font-weight-normal: 400;
+  
+  --radius: 0.75rem;
+  
+  --chart-1: #3498db;
+  --chart-2: #f39c12;
+  --chart-3: #27ae60;
+  --chart-4: #e74c3c;
+  --chart-5: #9b59b6;
+  
+  --sidebar: #ffffff;
+  --sidebar-foreground: #1a1a2e;
+  --sidebar-primary: #0f3460;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f8f9fa;
+  --sidebar-accent-foreground: #1a1a2e;
+  --sidebar-border: rgba(15, 52, 96, 0.1);
+  --sidebar-ring: #3498db;
+}
+
+.dark {
+  --background: #0a1f38;
+  --foreground: #f8f9fa;
+  --card: #16497d;
+  --card-foreground: #f8f9fa;
+  --popover: #16497d;
+  --popover-foreground: #f8f9fa;
+  --primary: #3498db;
+  --primary-foreground: #ffffff;
+  --secondary: #f39c12;
+  --secondary-foreground: #0a1f38;
+  --muted: #2c3e50;
+  --muted-foreground: #95a5a6;
+  --accent: #f39c12;
+  --accent-foreground: #0a1f38;
+  --destructive: #e74c3c;
+  --destructive-foreground: #ffffff;
+  --border: rgba(52, 152, 219, 0.2);
+  --input: #2c3e50;
+  --ring: #3498db;
+  --font-weight-medium: 600;
+  --font-weight-normal: 400;
+  --sidebar: #0a1f38;
+  --sidebar-foreground: #f8f9fa;
+  --sidebar-primary: #3498db;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #2c3e50;
+  --sidebar-accent-foreground: #f8f9fa;
+  --sidebar-border: rgba(52, 152, 219, 0.2);
+  --sidebar-ring: #3498db;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-light: var(--primary-light);
+  --color-primary-dark: var(--primary-dark);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary-light: var(--secondary-light);
+  --color-secondary-dark: var(--secondary-dark);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-light: var(--accent-light);
+  --color-accent-dark: var(--accent-dark);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-road-dark: var(--road-dark);
+  --color-road-light: var(--road-light);
+  --color-road-line: var(--road-line);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  html {
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    font-size: 1.875rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
+  }
+
+  label {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  button {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  input, textarea {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+}
+
+/* Custom Animation Keyframes */
+@keyframes road-line {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100px;
+  }
+}
+
+@keyframes drive-across {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(243, 156, 18, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(243, 156, 18, 0.6);
+  }
+}
+
+.road-line-animation {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    var(--road-line) 0,
+    var(--road-line) 30px,
+    transparent 30px,
+    transparent 70px
+  );
+  animation: road-line 2s linear infinite;
+}
+
+.drive-animation {
+  animation: drive-across 15s linear infinite;
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+.pulse-glow-animation {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+  background: rgba(15, 52, 96, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(52, 152, 219, 0.3);
+}
+
+/* Gradient overlays */
+.gradient-primary {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+}
+
+.gradient-secondary {
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-light) 100%);
+}
+
+.gradient-accent {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+}
