@@ -192,13 +192,13 @@ export default function AboutPage() {
                 <div className="absolute inset-0 bg-accent/20 rounded-3xl transform rotate-6"></div>
                 <div className="absolute inset-0">
                   <ImageWithFallback
-                    src="/CEO%20IMAGE.jpg"
-                    alt="Mr. Destiny Sunday Ameh background"
-                    className="absolute inset-0 w-full h-full object-cover filter blur-3xl scale-105"
-                  />
+                      src="/Salus%20Images/CEO%20IMAGE.bgblur.jpg"
+                      alt="Mr. Destiny Sunday Ameh background"
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
                   <div className="relative z-10 flex items-center justify-center h-full">
                     <ImageWithFallback
-                      src="/CEO%20IMAGE.jpg"
+                      src="/Salus%20Images/CEO%20IMAGE.jpg"
                       alt="Mr. Destiny Sunday Ameh"
                       className="rounded-3xl shadow-2xl w-3/4 h-[540px] object-cover"
                     />

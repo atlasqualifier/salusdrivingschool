@@ -9,11 +9,10 @@ export default function GalleryPage() {
     { src: '/Salus%20Images/IMG-20260224-WA0001.jpg', title: 'Facility Exterior', category: 'Fleet' },
     { src: '/Salus%20Images/IMG-20260224-WA0004.jpg', title: 'Training Session', category: 'Training' },
     { src: '/Salus%20Images/IMG-20260224-WA0008.jpg', title: 'Instructor Demo', category: 'Training' },
-    { src: '/Salus%20Images/IMG-20260224-WA0009.jpg', title: 'Student Practice', category: 'Practice' },
     { src: '/Salus%20Images/IMG-20260224-WA0011.jpg', title: 'Parking Skills', category: 'Practice' },
     { src: '/Salus%20Images/IMG-20260224-WA0012.jpg', title: 'Night Driving Training', category: 'Training' },
     { src: '/Salus%20Images/IMG-20260224-WA0013.jpg', title: 'Road Signs Education', category: 'Theory' },
-    { src: '/Salus%20Images/IMG-20260224-WA0015.jpg', title: 'Training Fleet', category: 'Fleet' },
+    
     {
       src: 'https://images.unsplash.com/photo-1751655406956-72da5712926e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsZWFybmVyJTIwZHJpdmVyJTIwcHJhY3RpY2V8ZW58MXx8fHwxNzcxOTMxMTgyfDA&ixlib=rb-4.1.0&q=80&w=1080',
       title: 'Student Practice Session',

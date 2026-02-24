@@ -373,13 +373,13 @@ export default function HomePage() {
             >
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                   <ImageWithFallback
-                    src="/CEO%20IMAGE.jpg"
+                    src="/Salus%20Images/CEO%20IMAGE.bgblur.jpg"
                     alt="Mr. Destiny Sunday Ameh background"
-                    className="absolute inset-0 w-full h-full object-cover filter blur-3xl scale-105"
+                    className="absolute inset-0 w-full h-full object-cover"
                   />
                   <div className="relative z-10">
                     <ImageWithFallback
-                      src="/CEO%20IMAGE.jpg"
+                      src="/Salus%20Images/CEO%20IMAGE.jpg"
                       alt="Mr. Destiny Sunday Ameh"
                       className="w-full h-[500px] object-cover"
                     />
