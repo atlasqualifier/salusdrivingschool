@@ -190,19 +190,12 @@ export default function AboutPage() {
             >
               <div className="relative">
                 <div className="absolute inset-0 bg-accent/20 rounded-3xl transform rotate-6"></div>
-                <div className="absolute inset-0">
+                <div className="absolute inset-0 flex items-center justify-center">
                   <ImageWithFallback
-                    src="/Salus%20Images/CEO%20IMAGE.bgblur.jpg"
-                    alt="Mr. Destiny Sunday Ameh background"
-                    className="absolute inset-0 w-full h-full object-cover"
+                    src="/team%20pictures/CEO%20IMAGE.jpg"
+                    alt="Mr. Destiny Sunday Ameh"
+                    className="rounded-3xl shadow-2xl w-3/4 h-[540px] object-cover"
                   />
-                  <div className="relative z-10 flex items-center justify-center h-full">
-                    <ImageWithFallback
-                      src="/Salus%20Images/CEO%20IMAGE.jpg"
-                      alt="Mr. Destiny Sunday Ameh"
-                      className="rounded-3xl shadow-2xl w-3/4 h-[540px] object-cover"
-                    />
-                  </div>
                 </div>
               </div>
             </motion.div>
@@ -244,6 +237,25 @@ export default function AboutPage() {
                 To be Nigeria's leading driving academy, recognized for excellence in driver education, innovation in training methods, and unwavering commitment to road safety across the nation.
               </p>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Certificate of Operation */}
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-6">
+            <h3 className="text-2xl font-bold text-primary">Certificate of Operation</h3>
+            <p className="text-muted-foreground">Official certificate for Salus Driving Academy</p>
+          </div>
+          <div className="max-w-3xl mx-auto">
+            <a href="/certificate%20of%20operation.jpg" target="_blank" rel="noreferrer" className="block rounded-2xl shadow-lg overflow-hidden">
+              <ImageWithFallback
+                src="/certificate%20of%20operation.jpg"
+                alt="Certificate of Operation"
+                className="w-full h-auto object-contain"
+              />
+            </a>
           </div>
         </div>
       </section>

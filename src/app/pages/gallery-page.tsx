@@ -6,53 +6,38 @@ import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 
 export default function GalleryPage() {
   const galleryImages = [
-    { src: '/Salus%20Images/IMG-20260224-WA0001.jpg', title: 'Facility Exterior', category: 'Fleet' },
-    { src: '/Salus%20Images/IMG-20260224-WA0004.jpg', title: 'Training Session', category: 'Training' },
-    { src: '/Salus%20Images/IMG-20260224-WA0008.jpg', title: 'Instructor Demo', category: 'Training' },
-    { src: '/Salus%20Images/IMG-20260224-WA0011.jpg', title: 'Parking Skills', category: 'Practice' },
-    { src: '/Salus%20Images/IMG-20260224-WA0012.jpg', title: 'Night Driving Training', category: 'Training' },
-    { src: '/Salus%20Images/IMG-20260224-WA0013.jpg', title: 'Road Signs Education', category: 'Theory' },
-    
-    {
-      src: 'https://images.unsplash.com/photo-1751655406956-72da5712926e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsZWFybmVyJTIwZHJpdmVyJTIwcHJhY3RpY2V8ZW58MXx8fHwxNzcxOTMxMTgyfDA&ixlib=rb-4.1.0&q=80&w=1080',
-      title: 'Student Practice Session',
-      category: 'Practice',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1710083521061-c1b1701c5d95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXIlMjBpbnRlcmlvciUyMGRhc2hib2FyZHxlbnwxfHx8fDE3NzE5MDgxNDN8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      title: 'Modern Car Interior',
-      category: 'Fleet',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1711574254532-ffb4d05976a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhdXRvbW9iaWxlJTIwcGFya2VkJTIwdXJiYW58ZW58MXx8fHwxNzcxOTMxMzMzfDA&ixlib=rb-4.1.0&q=80&w=1080',
-      title: 'Urban Driving Practice',
-      category: 'Practice',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1768862034751-497a74e9d756?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb2FkJTIwY3VydmUlMjBhZXJpYWwlMjB2aWV3fGVufDF8fHx8MTc3MTkzMTMzNHww&ixlib=rb-4.1.0&q=80&w=1080',
-      title: 'Road Navigation',
-      category: 'Training',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1604447199408-9798f9f64f88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMHN0dWRlbnQlMjBkcml2ZXIlMjBwYXNzZWQlMjB0ZXN0fGVufDF8fHx8MTc3MTkzMTA1MXww&ixlib=rb-4.1.0&q=80&w=1080',
-      title: 'Success Stories',
-      category: 'Students',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1767022705480-1266a3865c03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkcml2ZXIlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NzE4MzU4NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      title: 'Professional Instructor',
-      category: 'Team',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1583430318790-38d740c8e008?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZWZlbnNpdmUlMjBkcml2aW5nJTIwY291cnNlfGVufDF8fHx8MTc3MTkzMTE4MXww&ixlib=rb-4.1.0&q=80&w=1080',
-      title: 'Defensive Driving Course',
-      category: 'Training',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1574102583554-464eedbdd6a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBzdHVkeWluZyUyMHJvYWQlMjBtYXB8ZW58MXx8fHwxNzcxOTMxMzMzfDA&ixlib=rb-4.1.0&q=80&w=1080',
-      title: 'Theory Class',
-      category: 'Theory',
-    },
+    // Student pictures
+    { src: '/student%20pictures/1771930047944.jpg', title: 'Student 1', category: 'Students' },
+    { src: '/student%20pictures/1771930099009.jpg', title: 'Student 2', category: 'Students' },
+    { src: '/student%20pictures/1771930101160.jpg', title: 'Student 3', category: 'Students' },
+    { src: '/student%20pictures/1771930108625.jpg', title: 'Student 4', category: 'Students' },
+    { src: '/student%20pictures/1771930126251.jpg', title: 'Student 5', category: 'Students' },
+
+    // Training pictures
+    { src: '/training%20pictures/IMG-20260224-WA0019.jpg', title: 'Training 1', category: 'Training' },
+    { src: '/training%20pictures/IMG-20260224-WA0020.jpg', title: 'Training 2', category: 'Training' },
+    { src: '/training%20pictures/IMG-20260224-WA0021.jpg', title: 'Training 3', category: 'Training' },
+    { src: '/training%20pictures/IMG-20260224-WA0022.jpg', title: 'Training 4', category: 'Training' },
+    { src: '/training%20pictures/IMG-20260224-WA0023.jpg', title: 'Training 5', category: 'Training' },
+    { src: '/training%20pictures/IMG-20260224-WA0024.jpg', title: 'Training 6', category: 'Training' },
+    { src: '/training%20pictures/IMG-20260224-WA0029.jpg', title: 'Training 7', category: 'Training' },
+    { src: '/training%20pictures/IMG-20260224-WA0032.jpg', title: 'Training 8', category: 'Training' },
+    { src: '/training%20pictures/IMG-20260224-WA0033.jpg', title: 'Training 9', category: 'Training' },
+    { src: '/training%20pictures/IMG-20260224-WA0034.jpg', title: 'Training 10', category: 'Training' },
+    { src: '/training%20pictures/IMG-20260224-WA0035.jpg', title: 'Training 11', category: 'Training' },
+    { src: '/training%20pictures/IMG-20260224-WA0036.jpg', title: 'Training 12', category: 'Training' },
+    { src: '/training%20pictures/IMG-20260224-WA0037.jpg', title: 'Training 13', category: 'Training' },
+    { src: '/training%20pictures/IMG-20260224-WA0038.jpg', title: 'Training 14', category: 'Training' },
+
+    // Team pictures
+    { src: '/team%20pictures/IMG-20260224-WA0001.jpg', title: 'Team 1', category: 'Team' },
+    { src: '/team%20pictures/IMG-20260224-WA0004.jpg', title: 'Team 2', category: 'Team' },
+    { src: '/team%20pictures/IMG-20260224-WA0008.jpg', title: 'Team 3', category: 'Team' },
+    { src: '/team%20pictures/IMG-20260224-WA0011.jpg', title: 'Team 4', category: 'Team' },
+    { src: '/team%20pictures/IMG-20260224-WA0012.jpg', title: 'Team 5', category: 'Team' },
+    { src: '/team%20pictures/IMG-20260224-WA0013.jpg', title: 'Team 6', category: 'Team' },
+    { src: '/team%20pictures/IMG-20260224-WA0028.jpg', title: 'Team 7', category: 'Team' },
+    { src: '/team%20pictures/CEO%20IMAGE.jpg', title: 'CEO', category: 'Team' },
   ];
 
   const categories = ['All', 'Fleet', 'Training', 'Practice', 'Theory', 'Students', 'Team'];
