@@ -192,9 +192,9 @@ export default function AboutPage() {
                 <div className="absolute inset-0 bg-accent/20 rounded-3xl transform rotate-6"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
                   <ImageWithFallback
-                    src="/team-pictures/CEO_IMAGE_clean.png"
+                    src="/optimized/CEO_IMAGE.webp"
                     alt="Mr. Destiny Sunday Ameh"
-                    className="rounded-3xl shadow-2xl w-3/4 h-[540px] object-contain bg-white"
+                    className="rounded-3xl shadow-2xl w-full h-[540px] object-contain bg-transparent"
                   />
                 </div>
               </div>
@@ -249,9 +249,9 @@ export default function AboutPage() {
             <p className="text-muted-foreground">Official certificate for Salus Driving Academy</p>
           </div>
           <div className="max-w-3xl mx-auto">
-            <a href="/certificate-of-operation.jpg" target="_blank" rel="noreferrer" className="block rounded-2xl shadow-lg overflow-hidden">
+            <a href="/optimized/certificate-of-operation.jpg" target="_blank" rel="noreferrer" className="block rounded-2xl shadow-lg overflow-hidden transform rotate-0">
               <ImageWithFallback
-                src="/certificate-of-operation.jpg"
+                src="/optimized/certificate-of-operation.jpg"
                 alt="Certificate of Operation"
                 className="w-full h-auto object-contain"
               />
