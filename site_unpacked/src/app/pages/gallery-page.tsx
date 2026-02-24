@@ -6,46 +6,14 @@ import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 
 export default function GalleryPage() {
   const galleryImages = [
-    {
-      src: 'https://images.unsplash.com/photo-1619662413798-367880946883?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBkcml2aW5nJTIwc2Nob29sJTIwY2FyJTIwdHJhaW5pbmd8ZW58MXx8fHwxNzcxOTMxMDQ5fDA&ixlib=rb-4.1.0&q=80&w=1080',
-      title: 'Modern Training Vehicles',
-      category: 'Fleet',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1630406144797-821be1f35d75?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbnN0cnVjdG9yJTIwdGVhY2hpbmclMjBkcml2aW5nJTIwc3R1ZGVudHxlbnwxfHx8fDE3NzE5MzEwNTB8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      title: 'One-on-One Instruction',
-      category: 'Training',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1660153711902-c149a38587ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXIlMjBzdGVlcmluZyUyMHdoZWVsJTIwaGFuZHN8ZW58MXx8fHwxNzcxOTMxMDUwfDA&ixlib=rb-4.1.0&q=80&w=1080',
-      title: 'Hands-On Learning',
-      category: 'Training',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1671198514584-5aaa823bae4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoaWdod2F5JTIwcm9hZCUyMGRyaXZpbmd8ZW58MXx8fHwxNzcxOTMxMDUwfDA&ixlib=rb-4.1.0&q=80&w=1080',
-      title: 'Highway Practice',
-      category: 'Practice',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1748069037259-aac288675284?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYXJraW5nJTIwcHJhY3RpY2UlMjBjYXIlMjB0cmFpbmluZ3xlbnwxfHx8fDE3NzE5MzExODB8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      title: 'Parking Skills',
-      category: 'Practice',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1765914087871-12444522243d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuaWdodCUyMGRyaXZpbmclMjBjaXR5JTIwbGlnaHRzfGVufDF8fHx8MTc3MTkzMTE4MXww&ixlib=rb-4.1.0&q=80&w=1080',
-      title: 'Night Driving Training',
-      category: 'Training',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1652616889688-dfd4e69bfc37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmFmZmljJTIwcm9hZCUyMHNpZ25zfGVufDF8fHx8MTc3MTkzMTE4MXww&ixlib=rb-4.1.0&q=80&w=1080',
-      title: 'Road Signs Education',
-      category: 'Theory',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1740859743702-e52ec69325c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkcml2aW5nJTIwc2Nob29sJTIwY2FyJTIwZXh0ZXJpb3J8ZW58MXx8fHwxNzcxOTMxMTgyfDA&ixlib=rb-4.1.0&q=80&w=1080',
-      title: 'Training Fleet',
-      category: 'Fleet',
-    },
+    { src: '/Salus%20Images/IMG-20260224-WA0001.jpg', title: 'Facility Exterior', category: 'Fleet' },
+    { src: '/Salus%20Images/IMG-20260224-WA0004.jpg', title: 'Training Session', category: 'Training' },
+    { src: '/Salus%20Images/IMG-20260224-WA0008.jpg', title: 'Instructor Demo', category: 'Training' },
+    { src: '/Salus%20Images/IMG-20260224-WA0009.jpg', title: 'Student Practice', category: 'Practice' },
+    { src: '/Salus%20Images/IMG-20260224-WA0011.jpg', title: 'Parking Skills', category: 'Practice' },
+    { src: '/Salus%20Images/IMG-20260224-WA0012.jpg', title: 'Night Driving Training', category: 'Training' },
+    { src: '/Salus%20Images/IMG-20260224-WA0013.jpg', title: 'Road Signs Education', category: 'Theory' },
+    { src: '/Salus%20Images/IMG-20260224-WA0015.jpg', title: 'Training Fleet', category: 'Fleet' },
     {
       src: 'https://images.unsplash.com/photo-1751655406956-72da5712926e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsZWFybmVyJTIwZHJpdmVyJTIwcHJhY3RpY2V8ZW58MXx8fHwxNzcxOTMxMTgyfDA&ixlib=rb-4.1.0&q=80&w=1080',
       title: 'Student Practice Session',

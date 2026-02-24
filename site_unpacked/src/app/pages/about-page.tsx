@@ -48,7 +48,7 @@ export default function AboutPage() {
   ];
 
   const milestones = [
-    { year: '2008', title: 'Foundation', description: 'Salus Driving Academy established in Abuja' },
+    { year: '2021', title: 'Foundation', description: 'Salus Driving Academy established in Abuja' },
     { year: '2012', title: 'Expansion', description: 'Opened second training facility' },
     { year: '2018', title: 'Recognition', description: "Awarded 'Best Driving School in FCT'" },
     { year: '2024', title: 'Leadership', description: '5000+ successful students trained' },
@@ -76,7 +76,7 @@ export default function AboutPage() {
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
               Building Confident Drivers<br />
-              <span className="text-accent">Since 2008</span>
+              <span className="text-accent">Since 2021</span>
             </h1>
             <p className="text-xl text-white/90 leading-relaxed">
               Salus Driving Academy is Abuja's premier driving school, dedicated to creating safe, skilled, and confident drivers through world-class training.
@@ -98,7 +98,7 @@ export default function AboutPage() {
                 Who We Are
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Founded in 2008 by Mr. Destiny Sunday Ameh, Salus Driving Academy has grown to become the most trusted name in driver education across Abuja and the Federal Capital Territory.
+                Founded in 2021 by Mr. Destiny Sunday Ameh, Salus Driving Academy has grown to become the most trusted name in driver education across Abuja and the Federal Capital Territory.
               </p>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 We combine years of professional experience with modern teaching techniques to deliver comprehensive, practical, and effective driving courses. Our state-of-the-art facilities, experienced instructors, and well-maintained fleet ensure every student receives the highest quality training.
@@ -134,6 +134,77 @@ export default function AboutPage() {
                 alt="Highway driving"
                 className="rounded-2xl shadow-lg w-full h-64 object-cover mt-8"
               />
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gradient-to-br from-primary to-primary-light text-white">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="order-2 lg:order-1"
+            >
+              <div className="inline-block px-6 py-2 bg-accent/20 backdrop-blur-sm rounded-full mb-6 border border-accent/30">
+                <span className="text-accent font-semibold">Leadership</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Mr. Destiny Sunday Ameh
+              </h2>
+              <p className="text-xl text-accent mb-4 font-semibold">
+                Founder and Proprietor
+              </p>
+              <p className="text-lg text-white/90 mb-6 leading-relaxed">
+                A visionary leader with over 15 years of experience in driver education and road safety advocacy. Mr. Ameh founded Salus Driving Academy with a passion for creating safer roads through quality driver training.
+              </p>
+              <p className="text-lg text-white/90 mb-8 leading-relaxed">
+                His dedication to excellence and innovative approach to teaching has helped thousands of students become confident, responsible drivers. Under his leadership, Salus has become Abuja's most trusted driving academy.
+              </p>
+
+              <div className="space-y-4">
+                <h4 className="text-xl font-bold mb-4">Qualifications & Achievements</h4>
+                {[
+                  'Certified Master Driving Instructor',
+                  'FRSC Advanced Driving Certificate',
+                  'Road Safety Advocate & Consultant',
+                  '15+ Years in Driver Education',
+                  'Trained Over 5,000 Successful Drivers',
+                  'Multiple Industry Awards & Recognition',
+                ].map((item, index) => (
+                  <div key={index} className="flex items-start space-x-3">
+                    <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-white/90">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="order-1 lg:order-2"
+            >
+              <div className="relative">
+                <div className="absolute inset-0 bg-accent/20 rounded-3xl transform rotate-6"></div>
+                <div className="absolute inset-0">
+                  <ImageWithFallback
+                    src="/CEO%20IMAGE.jpg"
+                    alt="Mr. Destiny Sunday Ameh background"
+                    className="absolute inset-0 w-full h-full object-cover filter blur-3xl scale-105"
+                  />
+                  <div className="relative z-10 flex items-center justify-center h-full">
+                    <ImageWithFallback
+                      src="/CEO%20IMAGE.jpg"
+                      alt="Mr. Destiny Sunday Ameh"
+                      className="rounded-3xl shadow-2xl w-3/4 h-[540px] object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
             </motion.div>
           </div>
         </div>
@@ -216,68 +287,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* CEO Profile */}
-      <section className="py-20 bg-gradient-to-br from-primary to-primary-light text-white">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="order-2 lg:order-1"
-            >
-              <div className="inline-block px-6 py-2 bg-accent/20 backdrop-blur-sm rounded-full mb-6 border border-accent/30">
-                <span className="text-accent font-semibold">Leadership</span>
-              </div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Mr. Destiny Sunday Ameh
-              </h2>
-              <p className="text-xl text-accent mb-4 font-semibold">
-                Founder & Chief Executive Officer
-              </p>
-              <p className="text-lg text-white/90 mb-6 leading-relaxed">
-                A visionary leader with over 15 years of experience in driver education and road safety advocacy. Mr. Ameh founded Salus Driving Academy with a passion for creating safer roads through quality driver training.
-              </p>
-              <p className="text-lg text-white/90 mb-8 leading-relaxed">
-                His dedication to excellence and innovative approach to teaching has helped thousands of students become confident, responsible drivers. Under his leadership, Salus has become Abuja's most trusted driving academy.
-              </p>
-
-              <div className="space-y-4">
-                <h4 className="text-xl font-bold mb-4">Qualifications & Achievements</h4>
-                {[
-                  'Certified Master Driving Instructor',
-                  'FRSC Advanced Driving Certificate',
-                  'Road Safety Advocate & Consultant',
-                  '15+ Years in Driver Education',
-                  'Trained Over 5,000 Successful Drivers',
-                  'Multiple Industry Awards & Recognition',
-                ].map((item, index) => (
-                  <div key={index} className="flex items-start space-x-3">
-                    <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-0.5" />
-                    <span className="text-white/90">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="order-1 lg:order-2"
-            >
-              <div className="relative">
-                <div className="absolute inset-0 bg-accent/20 rounded-3xl transform rotate-6"></div>
-                <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1767022705480-1266a3865c03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkcml2ZXIlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NzE4MzU4NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Mr. Destiny Sunday Ameh"
-                  className="relative rounded-3xl shadow-2xl w-full h-[600px] object-cover"
-                />
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Why Salus Stands Out */}
       <section className="py-20 bg-white">

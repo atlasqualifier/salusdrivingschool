@@ -365,13 +365,20 @@ export default function HomePage() {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1767022705480-1266a3865c03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkcml2ZXIlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NzE4MzU4NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Mr. Destiny Sunday Ameh"
-                  className="w-full h-[500px] object-cover"
+                  src="/CEO%20IMAGE.jpg"
+                  alt="Mr. Destiny Sunday Ameh background"
+                  className="absolute inset-0 w-full h-full object-cover filter blur-3xl scale-105"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary via-primary/70 to-transparent p-8">
-                  <h3 className="text-2xl font-bold mb-1">Mr. Destiny Sunday Ameh</h3>
-                  <p className="text-accent font-semibold">Founder & Chief Executive Officer</p>
+                <div className="relative z-10">
+                  <ImageWithFallback
+                    src="/CEO%20IMAGE.jpg"
+                    alt="Mr. Destiny Sunday Ameh"
+                    className="w-full h-[500px] object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary via-primary/70 to-transparent p-8">
+                    <h3 className="text-2xl font-bold mb-1">Mr. Destiny Sunday Ameh</h3>
+                    <p className="text-accent font-semibold">Founder and Proprietor</p>
+                  </div>
                 </div>
               </div>
             </motion.div>
