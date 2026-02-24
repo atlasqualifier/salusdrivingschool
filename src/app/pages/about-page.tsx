@@ -249,9 +249,9 @@ export default function AboutPage() {
             <p className="text-muted-foreground">Official certificate for Salus Driving Academy</p>
           </div>
           <div className="max-w-3xl mx-auto">
-            <a href="/certificate%20of%20operation.jpg" target="_blank" rel="noreferrer" className="block rounded-2xl shadow-lg overflow-hidden">
+            <a href="/certificate-of-operation.jpg" target="_blank" rel="noreferrer" className="block rounded-2xl shadow-lg overflow-hidden">
               <ImageWithFallback
-                src="/public/certificate-of-operation.jpg"
+                src="/certificate-of-operation.jpg"
                 alt="Certificate of Operation"
                 className="w-full h-auto object-contain"
               />
