@@ -16,12 +16,12 @@ import {
 } from 'lucide-react';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import CEOImage from '../../../CEO IMAGE.jpg';
-@@
-                  <ImageWithFallback
-                    src={CEOImage}
-                    alt="Mr. Destiny Sunday Ameh"
-                    className="rounded-3xl shadow-2xl w-3/4 h-[540px] object-contain bg-white"
-                  />
+
+export default function AboutPage() {
+  const values = [
+    {
+      icon: Shield,
+      title: 'Safety First',
       description: 'Safety is our top priority in every aspect of training',
     },
     {
@@ -193,9 +193,9 @@ import CEOImage from '../../../CEO IMAGE.jpg';
                 <div className="absolute inset-0 bg-accent/20 rounded-3xl transform rotate-6"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
                   <ImageWithFallback
-                    src="/optimized/CEO_IMAGE.webp"
+                    src={CEOImage}
                     alt="Mr. Destiny Sunday Ameh"
-                    className="rounded-3xl shadow-2xl w-full h-[540px] object-contain bg-transparent"
+                    className="rounded-3xl shadow-2xl w-3/4 h-[540px] object-contain bg-white"
                   />
                 </div>
               </div>
@@ -299,8 +299,6 @@ import CEOImage from '../../../CEO IMAGE.jpg';
           </div>
         </div>
       </section>
-
-      
 
       {/* Why Salus Stands Out */}
       <section className="py-20 bg-white">
