@@ -106,7 +106,12 @@ export default function HomePage() {
       <Navigation />
 
       {/* Hero Section with Animated Car */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary via-primary-light to-secondary">
+      <section
+        className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center"
+        style={{
+          backgroundImage: "url('https://images.unsplash.com/photo-1660153711902-c149a38587ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXIlMjBzdGVlcmluZyUyMHdoZWVsJTIwaGFuZHN8ZW58MXx8fHwxNzcxOTMxMDUwfDA&ixlib=rb-4.1.0&q=80&w=1920')",
+        }}
+      >
         {/* Animated Background Elements */}
         <motion.div 
           style={{ y }}
@@ -119,6 +124,9 @@ export default function HomePage() {
         {/* Road Lines Animation */}
         <div className="absolute left-1/4 top-0 bottom-0 w-2 road-line-animation opacity-30" />
         <div className="absolute right-1/4 top-0 bottom-0 w-2 road-line-animation opacity-30" style={{ animationDelay: '1s' }} />
+
+        {/* Dark overlay for readability */}
+        <div className="absolute inset-0 bg-black/40" />
 
         {/* Content */}
         <div className="container mx-auto px-4 z-10">
