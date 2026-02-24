@@ -192,7 +192,7 @@ export default function AboutPage() {
                 <div className="absolute inset-0 bg-accent/20 rounded-3xl transform rotate-6"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
                   <ImageWithFallback
-                    src="/public/team-pictures/CEO_IMAGE_clean.png"
+                    src="/team-pictures/CEO_IMAGE_clean.png"
                     alt="Mr. Destiny Sunday Ameh"
                     className="rounded-3xl shadow-2xl w-3/4 h-[540px] object-contain bg-white"
                   />
