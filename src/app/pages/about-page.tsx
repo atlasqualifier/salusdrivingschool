@@ -190,13 +190,8 @@ export default function AboutPage() {
               className="order-1 lg:order-2"
             >
               <div className="relative">
-                <div className="absolute inset-0 bg-accent/20 rounded-3xl transform rotate-6"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <ImageWithFallback
-                    src={CEOImage}
-                    alt="Mr. Destiny Sunday Ameh"
-                    className="rounded-3xl shadow-2xl w-3/4 h-[540px] object-contain bg-white"
-                  />
+                <div className="bg-white rounded-3xl shadow-inner w-full h-[540px] flex items-center justify-center">
+                  {/* Proprietor image removed per request */}
                 </div>
               </div>
             </motion.div>
