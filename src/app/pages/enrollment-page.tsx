@@ -17,8 +17,30 @@ export default function EnrollmentPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
+
+    // Build WhatsApp message with form fields
+    const msgLines = [
+      'New enrollment request from Salus Driving Academy',
+      `Name: ${formData.fullName}`,
+      `Phone: ${formData.phone}`,
+      `Email: ${formData.email}`,
+      `Course: ${formData.course}`,
+      `Preferred Schedule: ${formData.schedule}`,
+      `Message: ${formData.message || '-'}`,
+    ];
+    const message = msgLines.join('\n');
+
+    // WhatsApp number (Nigeria): 2348035981433 (remove leading 0)
+    const waNumber = '2348035981433';
+    const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`;
+
+    // Open WhatsApp in a new tab (or app on mobile)
+    window.open(waUrl, '_blank');
+
+    // Provide UI feedback
     setIsSubmitted(true);
+
+    // Clear form after a short delay
     setTimeout(() => {
       setFormData({
         fullName: '',
@@ -28,7 +50,7 @@ export default function EnrollmentPage() {
         schedule: '',
         message: '',
       });
-    }, 3000);
+    }, 1500);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
