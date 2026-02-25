@@ -16,9 +16,7 @@ export function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-14 h-14 rounded-full bg-accent flex items-center justify-center">
-                <span className="font-bold text-primary text-2xl">S</span>
-              </div>
+              <img src="/favicon.jpg" alt="Salus Driving Academy" className="w-14 h-14 rounded-full object-cover" />
               <div>
                 <h3 className="font-bold text-xl">Salus</h3>
                 <p className="text-accent text-sm">Driving Academy</p>
@@ -95,8 +93,8 @@ export function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-accent" />
-                <a href="mailto:info@salusdriving.com" className="text-white/80 hover:text-accent transition-colors text-sm">
-                  info@salusdriving.com
+                <a href="mailto:salusdrivingacademy20@gmail.com" className="text-white/80 hover:text-accent transition-colors text-sm">
+                  salusdrivingacademy20@gmail.com
                 </a>
               </li>
             </ul>

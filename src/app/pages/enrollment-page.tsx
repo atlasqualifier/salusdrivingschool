@@ -70,9 +70,16 @@ export default function EnrollmentPage() {
   ];
 
   const schedules = [
-    'Morning (8AM - 12PM)',
-    'Afternoon (12PM - 4PM)',
-    'Evening (4PM - 8PM)',
+    'Morning: 8am',
+    'Morning: 9am',
+    'Morning: 10am',
+    'Morning: 11am',
+    'Afternoon: 12pm',
+    'Afternoon: 1pm',
+    'Afternoon: 2pm',
+    'Afternoon: 3pm',
+    'Evening: 4pm',
+    'Evening: 5pm',
     'Weekend (Saturday & Sunday)',
     'Flexible Schedule',
   ];
@@ -405,7 +412,7 @@ export default function EnrollmentPage() {
                 📞 Call: 08035981433
               </a>
               <a
-                href="mailto:info@salusdriving.com"
+                href="mailto:salusdrivingacademy20@gmail.com"
                 className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white rounded-xl hover:bg-white/20 transition-all border border-white/20 font-semibold"
               >
                 ✉️ Email Us

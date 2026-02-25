@@ -47,7 +47,7 @@ export default function ContactPage() {
     {
       icon: Mail,
       title: 'Email Us',
-      details: ['info@salusdriving.com', 'Response within 24 hours'],
+      details: ['salusdrivingacademy20@gmail.com', 'Response within 24 hours'],
       color: 'from-primary to-primary-light',
     },
     {

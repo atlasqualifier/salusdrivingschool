@@ -50,9 +50,9 @@ export default function AboutPage() {
 
   const milestones = [
     { year: '2021', title: 'Foundation', description: 'Salus Driving Academy established in Abuja' },
-    { year: '2012', title: 'Expansion', description: 'Opened second training facility' },
-    { year: '2018', title: 'Recognition', description: "Awarded 'Best Driving School in FCT'" },
-    { year: '2024', title: 'Leadership', description: '5000+ successful students trained' },
+    { year: '2022', title: 'Expansion', description: 'Opened second training facility' },
+    { year: '2024', title: 'Recognition', description: "Awarded 'Best Driving School in FCT'" },
+    { year: '2026', title: 'Leadership', description: '5000+ successful students trained' },
   ];
 
   return (
@@ -170,10 +170,7 @@ export default function AboutPage() {
                 {[
                   'Certified Master Driving Instructor',
                   'FRSC Advanced Driving Certificate',
-                  'Road Safety Advocate & Consultant',
                   '15+ Years in Driver Education',
-                  'Trained Over 5,000 Successful Drivers',
-                  'Multiple Industry Awards & Recognition',
                 ].map((item, index) => (
                   <div key={index} className="flex items-start space-x-3">
                     <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-0.5" />
@@ -189,9 +186,9 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="order-1 lg:order-2"
             >
-              <div className="relative">
-                <div className="absolute inset-0 bg-accent/20 rounded-3xl transform -rotate-3" />
-                <div className="absolute inset-0 flex items-center justify-center">
+              <div className="relative lg:pl-8">
+                <div className="hidden lg:block absolute inset-0 bg-accent/20 rounded-3xl transform -rotate-3" />
+                <div className="flex items-center justify-center">
                   <ImageWithFallback
                     src="/team-pictures/CEO%20IMAGE.jpg"
                     alt="Mr. Destiny Sunday Ameh"
