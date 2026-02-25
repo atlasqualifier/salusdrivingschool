@@ -1,0 +1,25 @@
+[Unit]
+Description=Salus Driving School static preview server
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/workspaces/salusdrivingschool
+# ExecStart uses the helper script in the repository to start the server.
+ExecStart=/bin/bash /workspaces/salusdrivingschool/tools/run_preview.sh
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+
+# Notes:
+# - To install system-wide (requires sudo):
+#   sudo cp tools/salus-preview.service /etc/systemd/system/
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now salus-preview.service
+# - To install for current user (no sudo):
+#   mkdir -p ~/.config/systemd/user
+#   cp tools/salus-preview.service ~/.config/systemd/user/salus-preview.service
+#   systemctl --user daemon-reload
+#   systemctl --user enable --now salus-preview.service
