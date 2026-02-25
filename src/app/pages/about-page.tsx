@@ -193,9 +193,9 @@ export default function AboutPage() {
                 <div className="absolute inset-0 bg-accent/20 rounded-3xl transform -rotate-3" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <ImageWithFallback
-                    src="/optimized/CEO_IMAGE.webp"
+                    src="/team-pictures/CEO%20IMAGE.jpg"
                     alt="Mr. Destiny Sunday Ameh"
-                    className="rounded-3xl shadow-2xl w-full max-w-xs h-[420px] object-contain bg-white"
+                    className="rounded-3xl shadow-2xl w-full max-w-xs h-[420px] object-cover bg-white"
                   />
                 </div>
               </div>
@@ -242,24 +242,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Certificate of Operation */}
-      <section className="py-12 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-6">
-            <h3 className="text-2xl font-bold text-primary">Certificate of Operation</h3>
-            <p className="text-muted-foreground">Official certificate for Salus Driving Academy</p>
-          </div>
-          <div className="max-w-3xl mx-auto">
-            <a href="/optimized/certificate-of-operation.jpg" target="_blank" rel="noreferrer" className="block rounded-2xl shadow-lg overflow-hidden" style={{ transform: 'rotate(6deg)' }}>
-              <ImageWithFallback
-                src="/optimized/certificate-of-operation.jpg"
-                alt="Certificate of Operation"
-                className="w-full h-auto object-contain"
-              />
-            </a>
-          </div>
-        </div>
-      </section>
+      {/* Certificate removed per request */}
 
       {/* Core Values */}
       <section className="py-20 bg-white">
