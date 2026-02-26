@@ -71,6 +71,7 @@ export default function EnrollmentPage() {
 
   const schedules = [
      'Morning: 7am',
+    'Morning: 8am',
     'Morning: 9am',
     'Morning: 10am',
     'Morning: 11am',
