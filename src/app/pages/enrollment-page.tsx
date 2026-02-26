@@ -70,7 +70,7 @@ export default function EnrollmentPage() {
   ];
 
   const schedules = [
-    'Morning: 8am',
+     'Morning: 7am',
     'Morning: 9am',
     'Morning: 10am',
     'Morning: 11am',
@@ -404,8 +404,9 @@ export default function EnrollmentPage() {
             <p className="text-xl text-white/90 mb-8">
               Our team is here to help. Contact us directly for immediate assistance.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <a
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">            <p className="mb-4 text-white/90">
+              Head Office: Austoma Filling Station, off Aminu Kano Crescent, Wuse 2, Abuja
+            </p>              <a
                 href="tel:08035981433"
                 className="px-8 py-4 bg-accent text-primary rounded-xl hover:bg-accent-light transition-all font-semibold shadow-lg"
               >

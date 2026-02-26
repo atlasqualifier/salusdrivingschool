@@ -25,7 +25,7 @@ export default function FAQPage() {
         },
         {
           q: 'Where is Salus Driving Academy located?',
-          a: 'We are located at Suite 211, His Glory Plaza, Sedafu Close, Off Ademola Adetokunbo Crescent, Wuse 2, Abuja. We\'re easily accessible from all parts of Abuja and close to major landmarks like Wuse 2 Market.',
+          a: 'We are located at Austoma Filling Station, off Aminu Kano Crescent, Wuse 2, Abuja. We\'re easily accessible from all parts of Abuja and close to major landmarks like Wuse 2 Market.',
         },
       ],
     },

@@ -266,7 +266,7 @@ export default function ContactPage() {
               </p>
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg h-[500px]">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.6385477845634!2d7.487!3d9.076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwMDQnMzMuNiJOIDfCsDI5JzEzLjIiRQ!5e0!3m2!1sen!2sng!4v1234567890"
+                  src="https://maps.google.com/maps?q=Austoma%20Filling%20Station%20off%20Aminu%20Kano%20Crescent%20Wuse%202%20Abuja&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -279,8 +279,7 @@ export default function ContactPage() {
               <div className="mt-6 bg-white rounded-2xl p-6">
                 <h3 className="font-bold text-primary mb-4">Location Details</h3>
                 <div className="space-y-3 text-muted-foreground">
-                  <p><strong>Suite 211</strong>, His Glory Plaza</p>
-                  <p>Sedafu Close, Off Ademola Adetokunbo Crescent</p>
+                  <p><strong>Austoma Filling Station</strong>, off Aminu Kano Crescent</p>
                   <p>Wuse 2, Abuja, Nigeria</p>
                   <div className="pt-4 border-t border-border">
                     <p className="text-sm">

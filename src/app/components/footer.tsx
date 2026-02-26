@@ -80,8 +80,8 @@ export function Footer() {
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
                 <span className="text-white/80 text-sm leading-relaxed">
-                  Suite 211, His Glory Plaza,<br />
-                  Sedafu Close, Off Ademola Adetokunbo Crescent,<br />
+                  Austoma Filling Station,<br />
+                  off Aminu Kano Crescent,<br />
                   Wuse 2, Abuja, Nigeria
                 </span>
               </li>
@@ -102,14 +102,16 @@ export function Footer() {
             {/* Social Media */}
             <div className="flex space-x-4 mt-6">
               {[
-                { Icon: Facebook, href: '#' },
-                { Icon: Instagram, href: '#' },
+                { Icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61551649194480' },
+                { Icon: Instagram, href: 'https://www.instagram.com/salusdrivingacademy?igsh=d2U4bHkxajAxdzdh' },
                 { Icon: Twitter, href: '#' },
                 { Icon: Linkedin, href: '#' },
               ].map(({ Icon, href }, index) => (
                 <a
                   key={index}
                   href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-all duration-300 group"
                 >
                   <Icon className="w-5 h-5 text-white group-hover:text-primary transition-colors" />
